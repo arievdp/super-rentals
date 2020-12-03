@@ -1,4 +1,5 @@
 {{!-- evaluates to class="Image Large" if condition this.isLarge resolves to true. this.large is referenced from the components instance veriables available in image.js.  --}}
+
 <button type="button" class="image {{if this.isLarge "large"}}" {{on "click" this.toggleSize}}>
     <img ...attributes>
     {{#if this.isLarge}}
